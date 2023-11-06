@@ -1,4 +1,4 @@
-require("dotenv").config();
+//require("dotenv").config();
 const express = require("express");
 
 const app = express();
@@ -134,8 +134,8 @@ app.get('/customer-details', (req, res) => {
 });
 
 
-const PORT = process.env.PORT || 4001;
+//const PORT = process.env.PORT || 4001;
 
-app.listen(PORT, () => {
-  console.log(`Application is running on PORT ${PORT}`);
+app.listen(4001, () => {
+  console.log(`Application is running on PORT 4001`);
 });
