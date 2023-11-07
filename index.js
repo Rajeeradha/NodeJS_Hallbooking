@@ -1,5 +1,5 @@
-//require("dotenv").config();
 const express = require("express");
+
 const app = express();
 app.use(express.json());
 
@@ -133,8 +133,8 @@ app.get('/customer-details', (req, res) => {
 });
 
 
-//const PORT = process.env.PORT || 4001;
+const PORT = 4001;
 
 app.listen(4001, () => {
-  console.log(`Application is running on PORT 4001`);
+  console.log(`Application is running on PORT ${PORT}`);
 });
